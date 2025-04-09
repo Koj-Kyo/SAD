@@ -20,7 +20,7 @@ Créer une API REST 100% Serverless en Java 17, déployée avec **AWS SAM**, qui
 |------------------------|-------------------------------------|
 | Code métier            | Java 17                             |
 | Plateforme             | AWS Lambda                          |
-| Déploiement Infra      | AWS SAM (`template.yaml`)           |
+| Déploiement Infra      | Serverless Framework          |
 | Authentification       | Amazon Cognito + JWT (OAuth2)       |
 | Stockage               | DynamoDB (NoSQL, serverless)        |
 | API Gateway            | REST API avec authorizer Cognito    |
