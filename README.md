@@ -5,7 +5,7 @@ SERVELESS APPLICATION DEPLOYMENT
 
 ## 📦 Objectif de la Démo
 
-Créer une API REST 100% Serverless en Java 17, déployée avec **AWS SAM**, qui :
+Créer une API REST 100% Serverless en Java 17, déployée avec **Serverless Framework**, qui :
 
 - ✅ Permet d'ajouter, lire, supprimer un utilisateur (`POST`, `GET`, `DELETE`)
 - ✅ S'intègre avec **Cognito** pour authentifier chaque appel API
