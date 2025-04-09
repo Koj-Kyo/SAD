@@ -1,7 +1,7 @@
 # SAD
 SERVELESS APPLICATION DEPLOYMENT
 
-# ☁️ DEMO : Serverless Java API avec SAM + Cognito + Validation JSON
+# ☁️ DEMO : Serverless Java API avec Serverless Framework + Cognito + Validation JSON
 
 ## 📦 Objectif de la Démo
 
