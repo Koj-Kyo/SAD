@@ -1,7 +1,7 @@
 # SAD
 SERVELESS APPLICATION DEPLOYMENT
 
-# ☁️ DEMO : Serverless Java API avec Serverless Framework + Cognito + Validation JSON
+# ☁️  DEMO : Serverless Java API avec Serverless Framework + Cognito + Validation JSON
 
 ## 📦 Objectif de la Démo
 
@@ -20,12 +20,11 @@ Créer une API REST 100% Serverless en Java 17, déployée avec **Serverless Fra
 |------------------------|-------------------------------------|
 | Code métier            | Java 17                             |
 | Plateforme             | AWS Lambda                          |
-| Déploiement Infra      | Serverless Framework          |
+| Déploiement Infra      | Déploiement via Serverless Framework          |
 | Authentification       | Amazon Cognito + JWT (OAuth2)       |
 | Stockage               | DynamoDB (NoSQL, serverless)        |
 | API Gateway            | REST API avec authorizer Cognito    |
 
----
 
 ## ⚙️ Étapes de Déploiement
 
@@ -50,7 +49,25 @@ Créer une API REST 100% Serverless en Java 17, déployée avec **Serverless Fra
 5. Dans `template.yaml`, ajoute :
 
 ### 3. Déploiement
-  - mvn clean package
-  - sam build
-  - sam deploy --guided
+```bash
+mvn clean package
+sls deploy
+```
+
+
+## Test API :
+
+1. Authentifie-toi via Cognito → récupère un token JWT
+2. Fais un POST :
+```http
+POST /user
+Authorization: Bearer <token>
+Content-Type: application/json
+
+{
+  "userId": "abc",
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+```
 
